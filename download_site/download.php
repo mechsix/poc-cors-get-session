@@ -1,8 +1,6 @@
 <?php
 
-session_set_cookie_params(["SameSite" => "None"]); //none, lax, strict
-session_set_cookie_params(["Secure" => "true"]); //false, true
-session_set_cookie_params(["HttpOnly" => "true"]); //false, true
+session_set_cookie_params(3600, '/; samesite=none', '', true, true);
 session_start();
 
 
